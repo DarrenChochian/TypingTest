@@ -25,7 +25,7 @@ class TypingTestApp:
         self.textbox.bind("<KeyPress>", self.start)
         self.textbox.bind("<BackSpace>", self.count_backspaces)
 
-        self.stats = tk.Label(self.frame, text="Speed: \n0.00 WPM\nAccuracy: 100.00%", font=("Helvetica", 16))
+        self.stats = tk.Label(self.frame, text="Speed: \n0.00 WPM\nAccuracy: 0.00%", font=("Helvetica", 16))
         self.stats.grid(row=2, column=0, columnspan=2, padx=5, pady=10)
 
         self.reset_button = tk.Button(self.frame, text="Reset", command=self.reset)
@@ -75,7 +75,7 @@ class TypingTestApp:
         self.running = False
         self.counter = 0
         self.errors = 0
-        self.stats.config(text="Speed: \n0.00 WPM\nAccuracy: 100.00%")
+        self.stats.config(text="Speed: \n0.00 WPM\nAccuracy: 0.00%")
 
         # Choose a new set of 30 words to form a new sentence
         random_words = random.sample(self.words, 30)
