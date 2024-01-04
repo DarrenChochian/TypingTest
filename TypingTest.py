@@ -8,7 +8,7 @@ class TypingTestApp:
     def __init__(self):
         self.master = tk.Tk()
         self.master.title("Typing Test")
-        self.master.geometry("800x600")  # Increased the height
+        self.master.geometry("800x600")
 
         self.words = open("words.txt", "r").read().split("\n")
 
@@ -77,7 +77,7 @@ class TypingTestApp:
         self.errors = 0
         self.stats.config(text="Speed: \n0.00 WPM\nAccuracy: 0.00%")
 
-        # Choose a new set of 30 words to form a new sentence
+        
         random_words = random.sample(self.words, 30)
         self.sentence_text = " ".join(random_words)
         self.sentence.config(text=self.sentence_text)
