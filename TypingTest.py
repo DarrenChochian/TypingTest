@@ -7,7 +7,7 @@ class TypingTestApp:
     def __init__(self):
         self.master = tk.Tk()
         self.master.title("Typing Test")
-        self.master.geometry("800x600") # window change
+        self.master.geometry("800x600") # window changes
 
         self.words = open("words.txt", "r").read().split("\n")
 
