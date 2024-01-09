@@ -94,7 +94,7 @@ class TypingTestApp:
         current_wpm = len(self.textbox.get().split(" ")) / self.counter * 60
         if current_wpm > self.personal_best_wpm:
             self.personal_best_wpm = current_wpm
-            self.personal_best_label.config(text="NEW PERSONAL BEST ★")  #vs
+            self.personal_best_label.config(text="NEW PERSONAL BEST ★")  #vss
 
 
 TypingTestApp()
