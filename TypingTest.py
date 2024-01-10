@@ -96,5 +96,5 @@ class TypingTestApp:
             self.personal_best_wpm = current_wpm
             self.personal_best_label.config(text="NEW PERSONAL BEST ★")
 
-#add cool features soon
+#add cool features soonn
 TypingTestApp()
